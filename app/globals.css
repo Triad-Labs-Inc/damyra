@@ -694,3 +694,96 @@ body {
   letter-spacing: 0.1em;
   color: var(--ink-3);
 }
+
+/* ── Wire table scroll wrapper ────────────────────────────────────── */
+.wire-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .desk-grid { grid-template-columns: repeat(2, 1fr); }
+  .desk-col:nth-child(2) { border-right: none; }
+  .desk-col:nth-child(3) { border-top: 1px solid var(--hair); }
+  .desk-col { min-height: auto; }
+}
+
+@media (max-width: 768px) {
+  /* Nav */
+  .mast { padding: 0 20px; height: 56px; }
+  .mast-nav a:not(.mast-cta) { display: none; }
+  .mast-nav { gap: 0; }
+
+  /* Subrule */
+  .subrule { padding: 8px 20px; flex-direction: column; gap: 4px; }
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 20px 56px;
+    gap: 48px;
+  }
+  .hero::before { display: none; }
+  .hero-hl { font-size: 60px; }
+  .deck { font-size: 18px; max-width: none; margin-top: 24px; }
+  .deck .lead::first-letter { font-size: 48px; }
+
+  /* Pull quote */
+  .pull {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 28px;
+  }
+  .pull-q { font-size: 30px; }
+  .pull-stat .num { font-size: 64px; }
+
+  /* Section heads */
+  .section-head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .section-head h2 { font-size: 42px; }
+
+  /* Integrations */
+  .integrations { padding: 56px 20px 64px; }
+  .int-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Desk */
+  .desk { padding: 56px 20px 64px; }
+  .desk-grid { grid-template-columns: repeat(2, 1fr); }
+  .desk-col {
+    border-right: none;
+    border-bottom: 1px solid var(--hair);
+    min-height: auto;
+  }
+  .desk-col:nth-child(2) { border-right: none; }
+  .desk-col:last-child { border-bottom: none; }
+
+  /* Wire */
+  .wire { padding: 56px 20px 64px; }
+  .wire-table { min-width: 640px; }
+  .wire-foot { flex-direction: column; gap: 6px; }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-hl { font-size: 44px; }
+  .hero-hl .stamp { font-size: 10px; }
+  .section-head h2 { font-size: 34px; }
+  .pull-q { font-size: 24px; }
+  .pull-stat .num { font-size: 52px; }
+  .int-grid { grid-template-columns: 1fr; }
+  .desk-grid { grid-template-columns: 1fr; }
+  .desk-col:nth-child(2) { border-bottom: 1px solid var(--hair); }
+  .desk-col:nth-child(3) { border-top: none; }
+}

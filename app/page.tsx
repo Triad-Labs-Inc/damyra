@@ -307,7 +307,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="wire-table">
+        <div className="wire-table-wrap"><div className="wire-table">
           <div className="wire-row head">
             <div className="cell">Capability</div>
             <div className="cell us">damyra</div>
@@ -391,7 +391,7 @@ export default function Home() {
             <div className="cell">Per-seat × N add-ons</div>
             <div className="cell">Eng team&apos;s salary</div>
           </div>
-        </div>
+        </div></div>
         <div className="wire-foot">
           <span>
             Reading: <b>✓</b> yes · <b>—</b> no · ▦ partial
