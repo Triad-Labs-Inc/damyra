@@ -5,22 +5,17 @@ export default function Home() {
     <>
       {/* ── Masthead ──────────────────────────────────────────────────────── */}
       <header className="mast">
-        <div className="mast-left">
-          Vol. 1 · No. 04 — Spring 2026
-          <br />
-          <span className="mast-sub">
-            Slack-native AI · For teams that already moved on
-          </span>
-        </div>
-        <div className="mast-logo">
+        <a className="mast-logo" href="#">
           damyra<sup>.ai</sup>
-        </div>
-        <div className="mast-right">
+        </a>
+        <nav className="mast-nav">
           <a href="#integrations">Integrations</a>
+          <a href="#roles">Use cases</a>
+          <a href="#compare">Compare</a>
           <a className="mast-cta" href="#cta">
             Get early access →
           </a>
-        </div>
+        </nav>
       </header>
 
       <div className="subrule">
