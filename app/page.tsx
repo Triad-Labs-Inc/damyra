@@ -49,10 +49,9 @@ export default function Home() {
           </h1>
           <div className="deck">
             <p className="lead">
-              Damyra is an AI assistant that lives in your Slack — wired into
-              Notion, Drive, Granola and the rest of your stack — so the answers
-              everyone keeps re-asking just <em>show up</em>, in the channel
-              they&apos;re already in.
+              Damyra lives in Slack, wired into your entire stack. Ask it
+              anything in any channel — it already knows the context, the
+              history, and who to pull from.
             </p>
           </div>
           <div className="cta-row">
@@ -65,13 +64,13 @@ export default function Home() {
           </div>
           <div className="hero-meta">
             <span>
-              <b>Plug-and-play</b> · live in 4 min.
+              <b>Live in 4 minutes.</b>
             </span>
             <span>
-              <b>SOC-2</b> in flight.
+              <b>Zero data training.</b>
             </span>
             <span>
-              <b>No data training.</b>
+              <b>Enterprise-ready.</b>
             </span>
           </div>
         </div>
@@ -144,9 +143,9 @@ export default function Home() {
         <div className="pull-label">Why this, why now</div>
         <div>
           <div className="pull-q">
-            Most &ldquo;AI for work&rdquo; tools are a new tab to forget about.
-            Damyra is a teammate you already know how to use — because it lives
-            where you already are.
+            Every other AI tool is a new tab you forget to open. Damyra is the
+            teammate you don&apos;t have to change your habits for — it already
+            lives where your work happens.
           </div>
           <div className="pull-src">
             — <b>From the editors</b>, on what&apos;s broken about enterprise AI
@@ -176,9 +175,9 @@ export default function Home() {
               Wired into the tools you <em>already</em> live in.
             </h2>
             <p className="section-sub">
-              Damyra reads the corners of your company that everyone else has to
-              ask about — and writes back to the ones you trust it to. OAuth in.
-              Read-by-default. Write actions you turn on, one tool at a time.
+              Damyra reads your entire stack — and writes back to the tools you
+              trust it to. OAuth in. Read by default. Write access you turn on,
+              one tool at a time.
             </p>
           </div>
         </div>
@@ -237,7 +236,7 @@ export default function Home() {
               <li>Surfaces objections from last quarter&apos;s calls.</li>
               <li>Flags accounts that went quiet.</li>
             </ul>
-            <div className="desk-stamp">Closes the loop</div>
+            <div className="desk-stamp">Every deal, fully in context.</div>
           </div>
           <div className="desk-col">
             <div className="desk-role">
@@ -255,7 +254,7 @@ export default function Home() {
               <li>Aggregates blockers across teams in one digest.</li>
               <li>Drafts the weekly update so you don&apos;t have to.</li>
             </ul>
-            <div className="desk-stamp">Less status, more signal</div>
+            <div className="desk-stamp">The weekly update writes itself.</div>
           </div>
           <div className="desk-col">
             <div className="desk-role">
@@ -273,7 +272,7 @@ export default function Home() {
               <li>Pulls customer quotes from sales calls + support.</li>
               <li>Drafts the investor update in your voice.</li>
             </ul>
-            <div className="desk-stamp">Board-ready in minutes</div>
+            <div className="desk-stamp">Your board update, in your voice, in minutes.</div>
           </div>
           <div className="desk-col">
             <div className="desk-role">
@@ -291,7 +290,7 @@ export default function Home() {
               <li>Surfaces past discussions on the same module.</li>
               <li>Tags reviewers based on code ownership + history.</li>
             </ul>
-            <div className="desk-stamp">Onboards new hires faster</div>
+            <div className="desk-stamp">New hire context on day one.</div>
           </div>
         </div>
       </section>
@@ -304,7 +303,7 @@ export default function Home() {
           </div>
           <div>
             <h2>
-              Why <em>not</em> the other ones.
+              The honest <em>comparison</em>.
             </h2>
             <p className="section-sub">
               A fair read of where Damyra fits against the AI-for-work tools
@@ -402,7 +401,7 @@ export default function Home() {
           <span>
             Reading: <b>✓</b> yes · <b>—</b> no · ▦ partial
           </span>
-          <span>Methodology: founders&apos; bake-off, March 2026.</span>
+          <span>Based on internal testing, March 2026.</span>
           <span>
             <b>Disagree?</b>&nbsp;&nbsp;founders@damyra.ai
           </span>
@@ -410,7 +409,11 @@ export default function Home() {
       </section>
 
       {/* ── Footer ─────────────────────────────────────────────────────────── */}
-      <footer className="footer" id="cta">
+      <div className="subrule" id="cta" style={{ justifyContent: "center", fontStyle: "italic", fontSize: "13px", letterSpacing: "0.04em", textTransform: "none", padding: "18px 56px", borderTop: "2px solid var(--rule)" }}>
+        Stop context-switching. Start asking.
+      </div>
+
+      <footer className="footer">
         <span>© damyra.ai — 2026</span>
         <span>Set in Source Serif &amp; JetBrains Mono</span>
         <span>founders@damyra.ai</span>
